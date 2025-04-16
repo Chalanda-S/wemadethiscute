@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Made This Cute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/knitting.png" alt="Knitting Logo" class="logo-img">
+                <span>WeMade<br>ThisCute</span>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#featured">Products</a></li>
+                <li><a href="https://www.etsy.com/shop/WeMadeThisCute?search_query=pattern">Patterns</a></li>
+                <li><a href="https://www.etsy.com/shop/WeMadeThisCute">Shop</a></li>
+                <li><a href="#newsletter">Follow Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to <span class="cursive">WeMadeThisCute</span></h1>
+                <p>See our heartmade creations just for you!</p>
+                <button class="cta-button" onclick="toggleStory()">Who are we?</button>
+            </div>
+        </section>
+
+        <div id="story-sidebar" class="story-sidebar">
+            <div class="sidebar-content">
+                <button class="close-btn" onclick="toggleStory()">×</button>
+                <h2>Our Story</h2>
+                <div class="story-content">
+                    <p>Welcome to WeMadeThisCute our crochet journey! We started with a simple passion for creating
+                        beautiful things with yarn and needles. What began as a hobby quickly turned into a mission to
+                        share our love for crochet with the world.</p>
+                    <p>From small town in Turkey, world wide shipping is available. Please feel free to send us your
+                        inquiries through a contact us button! Can't wait to see you!!</p>
+                </div>
+            </div>
+        </div>
+
+        <section id="featured">
+            <h2>Our Creations</h2>
+            <div class="pinterest-grid">
+                <div class="pin-card">
+                    <div class="pin-image">
+                        <img src="images/Rose.webp" alt="Crochet Rose">
+                    </div>
+                    <div class="pin-info">
+                        <h3>Roses</h3>
+                        <p>Beautiful crochet roses for decorations</p>
+                    </div>
+                </div>
+                <div class="pin-card">
+                    <div class="pin-image">
+                        <img src="images/v-neck wool sweather.webp" alt="Crochet V-neck">
+                    </div>
+                    <div class="pin-info">
+                        <h3>V-neck Sweater</h3>
+                        <p>Elegant v-neck crochet sweater design</p>
+                    </div>
+                </div>
+                <div class="pin-card">
+                    <div class="pin-image">
+                        <img src="images/Chunky Wool Cardigan.webp" alt="Crochet Chunky">
+                    </div>
+                    <div class="pin-info">
+                        <h3>Chunky Cardigan</h3>
+                        <p>Warm and cozy chunky crochet cardigan</p>
+                    </div>
+                </div>
+                <div class="pin-card">
+                    <div class="pin-image">
+                        <img src="images/Rabbit.webp" alt="Crochet Rabbit">
+                    </div>
+                    <div class="pin-info">
+                        <h3>Plushie Rabbit</h3>
+                        <p>Adorable crochet rabbit plushie</p>
+                    </div>
+                </div>
+                <div class="pin-card">
+                    <div class="pin-image">
+                        <img src="images/Customize Embroidery.webp" alt="Crochet Embroidery">
+                    </div>
+                    <div class="pin-info">
+                        <h3>Custom Embroidery</h3>
+                        <p>Personalized crochet embroidery designs</p>
+                    </div>
+                </div>
+                <div class="pin-card">
+                    <div class="pin-image">
+                        <img src="images/Scandi Cardigan.webp" alt="Crochet Cardigan">
+                    </div>
+                    <div class="pin-info">
+                        <h3>Scandi Cardigan</h3>
+                        <p>Nordic-inspired crochet cardigan</p>
+                    </div>
+                </div>
+                <div class="pin-card">
+                    <div class="pin-image">
+                        <img src="images/Beanie.webp" alt="Crochet Beanie">
+                    </div>
+                    <div class="pin-info">
+                        <h3>Cozy Beanie</h3>
+                        <p>Warm and stylish crochet beanie</p>
+                    </div>
+                </div>
+                <div class="pin-card">
+                    <div class="pin-image">
+                        <img src="images/Sweater.webp" alt="Crochet Sweater">
+                    </div>
+                    <div class="pin-info">
+                        <h3>Classic Sweater</h3>
+                        <p>Timeless crochet sweater design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more-container">
+                <a href="creations.html" class="see-more-link">See More Creations <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="newsletter-content">
+                <div class="social-section">
+                    <h2>Follow Us</h2>
+                    <p>Stay updated with our latest creations and patterns!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.etsy.com/shop/WeMadeThisCute" class="etsy-link">Etsy</a>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <h2>Contact Us</h2>
+                    <p>Have questions? Reach out to us!</p>
+                    <div class="contact-links">
+                        <a href="#"><i class="fas fa-envelope"></i> Email Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Cozy Crochet Corner. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
