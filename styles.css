@@ -119,7 +119,7 @@ nav {
         top: 0;
         right: -100%;
         width: 70%;
-        height: 100vh;
+        height: 60vh;
         background-color: white;
         flex-direction: column;
         align-items: center;
@@ -148,7 +148,7 @@ nav {
 
 /* Hero Section */
 #hero {
-    height: 80vh;
+    height: 50vh;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     display: flex;
     align-items: center;
@@ -256,11 +256,12 @@ nav {
 
 .pin-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     padding: 2rem;
     max-width: 1400px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .pin-card {
@@ -451,7 +452,7 @@ nav {
     }
 
     .pin-grid {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
     }
 }
@@ -484,7 +485,7 @@ nav {
     }
 
     .pin-grid {
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 }
@@ -557,9 +558,29 @@ nav {
     }
 
     .pin-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        padding: 1.5rem;
+        padding: 1rem;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .pin-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .pin-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .pin-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -596,7 +617,7 @@ nav {
     }
 
     .pin-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
         padding: 1rem;
     }
@@ -604,9 +625,9 @@ nav {
 
 @media (max-width: 480px) {
     .pin-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 10px;
-        padding: 10px;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
     }
 }
 
