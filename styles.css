@@ -38,6 +38,7 @@ nav {
     padding: 0 5%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .logo {
@@ -69,14 +70,33 @@ nav {
     margin-top: -0.5rem;
 }
 
-nav ul {
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
     display: flex;
     list-style: none;
     gap: 2.5rem;
     font-size: 1.1rem;
 }
 
-nav ul a {
+.nav-links a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
@@ -84,8 +104,46 @@ nav ul a {
     font-size: 1.1rem;
 }
 
-nav ul a:hover {
+.nav-links a:hover {
     color: var(--accent-color);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
 }
 
 /* Hero Section */
@@ -141,15 +199,15 @@ nav ul a:hover {
 
 .hero-content .cursive {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     display: block;
-    margin: -0.5rem 0 0.8rem;
-    color: #1E3A8A;
+    margin: -0.5rem 1 0.8rem;
+    color: #FFFFFF;
     text-shadow: 
         2px 2px 4px rgba(0, 0, 0, 0.2),
         4px 4px 8px rgba(0, 0, 0, 0.1);
-    line-height: 0.8;
+    line-height: 0.7;
 }
 
 .hero-content p {
